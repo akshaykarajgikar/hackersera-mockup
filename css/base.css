@@ -1,0 +1,284 @@
+/***** TABLE OF CONTENTS *****/
+/*****************************/
+/*________ Index Page styles below ________*/
+/************************************* Global variables declaration **********************************/
+/*****************************************************************************************************/
+:root {
+  --colorIndigo: #542a6b;
+  --colorGray: #f5f5f5;
+  --colorGrayLight: #eeeeee;
+  --colorWhite: #fff;
+  --colorBlack: #000;
+}
+
+/************************************* Fonts declaration *********************************************/
+/*****************************************************************************************************/
+@font-face {
+  font-family: "montserrat";
+  font-weight: normal;
+  src: url("./../assets/fonts/montserrat/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "montserrat";
+  font-weight: 700;
+  src: url("./../assets/fonts/montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "montserrat";
+  font-weight: bolder;
+  src: url("./../assets/fonts/montserrat/Montserrat-Black.ttf");
+}
+
+/*************************************** Scrollbar styles ********************************************/
+/*****************************************************************************************************/
+/********************************************* Reset *************************************************/
+/*****************************************************************************************************/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat";
+  background-color: var(--colorWhite);
+  scroll-behavior: smooth;
+}
+
+button {
+  outline: none !important;
+}
+
+a:active {
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+}
+
+button:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+/******************************************* CUSTOM Styles *******************************************/
+/*****************************************************************************************************/
+.montserrat {
+  font-family: "montserrat";
+}
+
+.font-bolder {
+  font-weight: bolder;
+}
+
+@media (min-width: 576px) {
+  .border-sm-left {
+    border-left: 1px solid !important;
+  }
+  .border-sm-right {
+    border-right: 1px solid !important;
+  }
+  .border-sm-top {
+    border-top: 1px solid !important;
+  }
+  .border-sm-bottom {
+    border-bottom: 1px solid !important;
+  }
+  .border-sm-left-0 {
+    border-left: 0 !important;
+  }
+  .border-sm-right-0 {
+    border-right: 0 !important;
+  }
+  .border-sm-top-0 {
+    border-top: 0 !important;
+  }
+  .border-sm-bottom-0 {
+    border-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .border-md-left {
+    border-left: 1px solid !important;
+  }
+  .border-md-right {
+    border-right: 1px solid !important;
+  }
+  .border-md-top {
+    border-top: 1px solid !important;
+  }
+  .border-md-bottom {
+    border-bottom: 1px solid !important;
+  }
+  .border-md-left-0 {
+    border-left: 0 !important;
+  }
+  .border-md-right-0 {
+    border-right: 0 !important;
+  }
+  .border-md-top-0 {
+    border-top: 0 !important;
+  }
+  .border-md-bottom-0 {
+    border-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .border-lg-left {
+    border-left: 1px solid !important;
+  }
+  .border-lg-right {
+    border-right: 1px solid !important;
+  }
+  .border-lg-top {
+    border-top: 1px solid !important;
+  }
+  .border-lg-bottom {
+    border-bottom: 1px solid !important;
+  }
+  .border-lg-left-0 {
+    border-left: 0 !important;
+  }
+  .border-lg-right-0 {
+    border-right: 0 !important;
+  }
+  .border-lg-top-0 {
+    border-top: 0 !important;
+  }
+  .border-lg-bottom-0 {
+    border-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .border-xl-left {
+    border-left: 1px solid !important;
+  }
+  .border-xl-right {
+    border-right: 1px solid !important;
+  }
+  .border-xl-top {
+    border-top: 1px solid !important;
+  }
+  .border-xl-bottom {
+    border-bottom: 1px solid !important;
+  }
+  .border-xl-left-0 {
+    border-left: 0 !important;
+  }
+  .border-xl-right-0 {
+    border-right: 0 !important;
+  }
+  .border-xl-top-0 {
+    border-top: 0 !important;
+  }
+  .border-xl-bottom-0 {
+    border-bottom: 0 !important;
+  }
+}
+
+.text-indigo {
+  color: var(--colorIndigo) !important;
+}
+
+.text-gray {
+  color: var(--colorGray) !important;
+}
+
+.text-graylight {
+  color: var(--colorGrayLight) !important;
+}
+
+.text-white {
+  color: var(--colorWhite) !important;
+}
+
+.text-black {
+  color: var(--colorBlack) !important;
+}
+
+.bg-indigo {
+  background-color: var(--colorIndigo) !important;
+}
+
+.bg-gray {
+  background-color: var(--colorGray) !important;
+}
+
+.bg-graylight {
+  background-color: var(--colorGrayLight) !important;
+}
+
+.bg-white {
+  background-color: var(--colorWhite) !important;
+}
+
+.bg-black {
+  background-color: var(--colorBlack) !important;
+}
+
+.border-indigo {
+  border-color: var(--colorIndigo) !important;
+}
+
+.border-gray {
+  border-color: var(--colorGray) !important;
+}
+
+.border-graylight {
+  border-color: var(--colorGrayLight) !important;
+}
+
+.border-white {
+  border-color: var(--colorWhite) !important;
+}
+
+.border-black {
+  border-color: var(--colorBlack) !important;
+}
+
+.outline-none {
+  outline: 0 !important;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.h-fit-content {
+  height: -moz-fit-content !important;
+  height: -webkit-fit-content !important;
+  height: fit-content !important;
+}
+
+.w-fit-content {
+  width: -moz-fit-content !important;
+  width: -webkit-fit-content !important;
+  width: fit-content !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+/*_____________________________ Index Page styles below _____________________________*/
+/*___________________________________________________________________________________*/
+/******************************************* Header styles *******************************************/
+/*****************************************************************************************************/
+/*# sourceMappingURL=base.css.map */
