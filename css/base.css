@@ -5,8 +5,9 @@
 /*****************************************************************************************************/
 :root {
   --colorIndigo: #542a6b;
-  --colorGray: #f5f5f5;
-  --colorGrayLight: #eeeeee;
+  --colorGray: #eeeeee;
+  --colorGrayLight: #f5f5f5;
+  --colorGrayOpacity50: #70707080;
   --colorWhite: #fff;
   --colorBlack: #000;
 }
@@ -15,20 +16,23 @@
 /*****************************************************************************************************/
 @font-face {
   font-family: "montserrat";
-  font-weight: normal;
-  src: url("./../assets/fonts/montserrat/Montserrat-Medium.ttf");
+  src: url("./../assets/fonts/montserrat/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "montserrat";
+  src: url("./../assets/fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
   font-weight: 700;
-  src: url("./../assets/fonts/montserrat/Montserrat-Bold.ttf");
+  font-style: normal;
 }
 
 @font-face {
   font-family: "montserrat";
-  font-weight: bolder;
-  src: url("./../assets/fonts/montserrat/Montserrat-Black.ttf");
+  src: url("./../assets/fonts/montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*************************************** Scrollbar styles ********************************************/
@@ -45,6 +49,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "montserrat";
+  font-weight: normal;
   background-color: var(--colorWhite);
   scroll-behavior: smooth;
 }
@@ -66,11 +71,18 @@ button:active {
 /******************************************* CUSTOM Styles *******************************************/
 /*****************************************************************************************************/
 .montserrat {
-  font-family: "montserrat";
+  font-family: "montserrat" !important;
 }
 
-.font-bolder {
-  font-weight: bolder;
+.font-weight-900 {
+  font-weight: 900 !important;
+}
+
+.special-container-xl {
+  max-width: 1400px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 576px) {
@@ -193,6 +205,10 @@ button:active {
   color: var(--colorGrayLight) !important;
 }
 
+.text-graydark {
+  color: var(--colorGrayOpacity50) !important;
+}
+
 .text-white {
   color: var(--colorWhite) !important;
 }
@@ -213,6 +229,10 @@ button:active {
   background-color: var(--colorGrayLight) !important;
 }
 
+.bg-graydark {
+  background-color: var(--colorGrayOpacity50) !important;
+}
+
 .bg-white {
   background-color: var(--colorWhite) !important;
 }
@@ -231,6 +251,10 @@ button:active {
 
 .border-graylight {
   border-color: var(--colorGrayLight) !important;
+}
+
+.border-graydark {
+  border-color: var(--colorGrayOpacity50) !important;
 }
 
 .border-white {
@@ -275,6 +299,10 @@ button:active {
 
 .cursor-pointer {
   cursor: pointer !important;
+}
+
+.border-3px {
+  border-width: 3px !important;
 }
 
 /*_____________________________ Index Page styles below _____________________________*/

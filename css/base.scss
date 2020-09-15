@@ -15,8 +15,9 @@
 
 :root {
   --colorIndigo: #542a6b; //Martinique
-  --colorGray: #f5f5f5; //Gray
-  --colorGrayLight: #eeeeee; //Light Gray
+  --colorGray: #eeeeee; //Gray
+  --colorGrayLight: #f5f5f5; //Light Gray
+  --colorGrayOpacity50: #70707080; //Gray with Opacity 50%
 
   --colorWhite: #fff; //white
   --colorBlack: #000; //black
@@ -26,18 +27,24 @@
 /*****************************************************************************************************/
 @font-face {
   font-family: "montserrat";
-  font-weight: normal;
-  src: url("./../assets/fonts/montserrat/Montserrat-Medium.ttf");
+  src: url("./../assets/fonts/montserrat/Montserrat-Black.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
 @font-face {
   font-family: "montserrat";
+  src: url("./../assets/fonts/montserrat/Montserrat-Bold.ttf")
+    format("truetype");
   font-weight: 700;
-  src: url("./../assets/fonts/montserrat/Montserrat-Bold.ttf");
+  font-style: normal;
 }
 @font-face {
   font-family: "montserrat";
-  font-weight: bolder;
-  src: url("./../assets/fonts/montserrat/Montserrat-Black.ttf");
+  src: url("./../assets/fonts/montserrat/Montserrat-Medium.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*************************************** Scrollbar styles ********************************************/
@@ -76,6 +83,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "montserrat";
+  font-weight: normal;
   background-color: var(--colorWhite);
   scroll-behavior: smooth;
 }
@@ -101,14 +109,21 @@ button:active {
 /*****************************************************************************************************/
 
 .montserrat {
-  font-family: "montserrat";
+  font-family: "montserrat" !important;
 }
 
-.font-bolder {
-  font-weight: bolder;
+.font-weight-900 {
+  font-weight: 900 !important;
 }
 
-//Responsive Boreder classes for bootstrap
+.special-container-xl {
+  max-width: 1400px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+//Responsive Border classes for bootstrap
 @media (min-width: 576px) {
   .border-sm-left {
     border-left: 1px solid !important;
@@ -227,6 +242,9 @@ button:active {
 .text-graylight {
   color: var(--colorGrayLight) !important;
 }
+.text-graydark {
+  color: var(--colorGrayOpacity50) !important;
+}
 .text-white {
   color: var(--colorWhite) !important;
 }
@@ -243,6 +261,9 @@ button:active {
 .bg-graylight {
   background-color: var(--colorGrayLight) !important;
 }
+.bg-graydark {
+  background-color: var(--colorGrayOpacity50) !important;
+}
 .bg-white {
   background-color: var(--colorWhite) !important;
 }
@@ -258,6 +279,9 @@ button:active {
 }
 .border-graylight {
   border-color: var(--colorGrayLight) !important;
+}
+.border-graydark {
+  border-color: var(--colorGrayOpacity50) !important;
 }
 .border-white {
   border-color: var(--colorWhite) !important;
@@ -295,6 +319,10 @@ button:active {
 
 .cursor-pointer {
   cursor: pointer !important;
+}
+
+.border-3px {
+  border-width: 3px !important;
 }
 
 /*_____________________________ Index Page styles below _____________________________*/
